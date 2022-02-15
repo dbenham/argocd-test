@@ -6,12 +6,12 @@ metadata:
     # https://argoproj.github.io/argo-cd/user-guide/compare-options/
     # argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
-  ttlSecondsAfterFinished: 30
+  ttlSecondsAfterFinished: 15
   template:
     spec:
       containers:
       - name: pi
         image: perl
-        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(1024) ; print 'drb 10';"]
+        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(1024) ; print 'drb 11';"]
       restartPolicy: Never
   backoffLimit: 2
