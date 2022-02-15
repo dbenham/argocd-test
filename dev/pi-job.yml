@@ -3,9 +3,9 @@ kind: Job
 metadata:
   name: pi
 spec:
+  ttlSecondsAfterFinished: 30
   template:
     spec:
-      ttlSecondsAfterFinished: 30
       containers:
       - name: pi
         image: perl
