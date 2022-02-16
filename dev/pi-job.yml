@@ -12,6 +12,6 @@ spec:
       containers:
       - name: pi
         image: perl
-        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(1024) ; print 'drb 13';"]
+        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(1024) ; print 'drb 14';"]
       restartPolicy: Never
   backoffLimit: 2
