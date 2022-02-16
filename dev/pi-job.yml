@@ -6,7 +6,6 @@ metadata:
     # https://argoproj.github.io/argo-cd/user-guide/compare-options/
     # argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
-  ttlSecondsAfterFinished: 0
   template:
     spec:
       containers:
